@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  background-color: lightgrey;
+  height: 100vh;
+  width: 60vw;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside section section"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+}
+
+.section {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+}
+
+.card1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.card2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.card3 {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.card4 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+h2 {
+  text-transform: capitalize;
+  color: hotpink;
+}
+
+.name {
+  width: 200px;
+  height: 100px;
+  background-color: hotpink;
+  border-radius: 10px;
+  margin-top: -10;
+}
